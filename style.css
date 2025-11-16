@@ -1,1 +1,86 @@
-jfhj
+
+    * { 
+    	margin: 0; 
+    	padding: 0; 
+    	box-sizing: border-box; 
+    	font-family: 'Poppins', sans-serif; 
+    }
+    body { 
+    	background: #f8f5ef; 
+    	color: #222; }
+    header { 
+    	background: #4f5d48; 
+    	color: white; 
+    	padding: 80px 40px; 
+    	text-align: center; 
+    	position: relative; }
+    header h1 { 
+    	font-size: 72px; 
+    	font-weight: 800; 
+    	letter-spacing: 3px; }
+    header img { 
+    	width: 260px; 
+    	border-radius: 20px; 
+    	margin-top: 20px; }
+
+    nav { 
+    	display: flex; 
+    	justify-content: center; 
+    	gap: 40px; background: #fff; 
+    	padding: 20px; 
+    	position: sticky; top: 0; }
+
+    nav a { 
+    	text-decoration: none; 
+    	color: #333; 
+    	font-weight: bold; }
+
+    section { padding: 60px 40px; }
+    .title { 
+    	font-size: 48px; 
+    	font-weight: 700; 
+    	margin-bottom: 20px; }
+
+    #about { 
+    	display: flex; 
+    	align-items: center; 
+    	gap: 40px; }
+    #about img { 
+    	width: 260px; 
+    	border-radius: 10px; }
+    #about .info { max-width: 600px; }
+
+    #projects .grid { 
+    	display: grid; 
+    	grid-template-columns: repeat(auto-fit, minmax(250px, 1fr)); 
+    	gap: 20px; }
+    .project { 
+    	background: #eae7df; 
+    	border-radius: 15px; 
+    	padding: 20px; }
+    .project h3 { margin-bottom: 10px; }
+
+    #contact form { 
+    	max-width: 500px; 
+    	display: flex; 
+    	flex-direction: column; 
+    	gap: 15px; }
+    input, textarea { 
+    	padding: 12px; 
+    	border-radius: 8px; 
+    	border: 1px solid #999; }
+    button { 
+    	padding: 12px; 
+    	border: none; 
+    	background: #ffb400; 
+    	color: #000; 
+    	border-radius: 8px; 
+    	font-weight: bold; 
+    	cursor: pointer; }
+
+    footer { 
+    	text-align: center; 
+    	padding: 40px; 
+    	background: #4f5d48; 
+    	color: white; 
+    	margin-top: 40px; }
