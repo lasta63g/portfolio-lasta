@@ -7,20 +7,34 @@
   <link rel="stylesheet" href="style.css">
 </head>
 <body>
-  <header>
-    <h1>PORTFOLIO</h1>
-    <video width="1513px" height="200px" controls>
-      <source src="blob:https://www.pinterest.com/608f0f72-4d90-4eb9-8a77-10f6b4368039" type="video/mp4">
-        browser does not support the video
+
+  <!-- 🔵 Scroll Progress Bar -->
+  <div id="scroll-progress"></div>
+
+  <!-- 🔵 Mobile Menu + Header -->
+  <header class="portfolio-header">
+    <button id="menu-btn" class="mobile-menu">☰</button>
+
+    <video autoplay playsinline muted class="bg-video">
+      <source src="./VIDEO/backgroundd.mp4" type="video/mp4">
     </video>
+
+    <div class="header-content">
+      <h1>PORTFOLIO</h1>
+    </div>
   </header>
 
-  <nav>
-    <a href="#about">About</a>
-    <a href="#projects">Projects</a>
-    <a href="#contact">Contact</a>
+  <!-- Navigation -->
+  <nav id="navbar">
+    <ul>
+      <li><a href="#home">Home</a></li>
+      <li><a href="#about">About</a></li>
+      <li><a href="#skills">Skills</a></li>
+      <li><a href="#projects">Projects</a></li>
+    </ul>
   </nav>
 
+  <!-- 🔵 About -->
   <section id="about">
     <img src="https://i.pinimg.com/1200x/3a/63/e6/3a63e6e6de9a3b18239fbccc6ecd684a.jpg" alt="Profile" />
     <div class="info">
@@ -29,28 +43,66 @@
     </div>
   </section>
 
+  <!-- 🔵 Projects -->
   <section id="projects">
     <h2 class="title">Projects</h2>
-    <div class="grid">
+    <div class="projects-container">
       <div class="project-card">
-      <img src="https://i.pinimg.com/736x/6a/e5/01/6ae501db05e1f6af244543268cac04e6.jpg" alt="Project 1 Image" />
-      <h3>Project 1</h3>
-      <p>Weather app:A responsive weather app that fetches live weather data using an API and displays temperature, humidity, wind, and forecast with an elegant UI. Includes search functionality, dynamic icons, and auto-location detection.</p>
-        
+        <video autoplay muted loop playsinline id="video">
+          <source src="./VIDEO/weather.mp4" type="video/mp4">
+        </video>
+        <h3>Weather App</h3>
+        <p>A responsive weather app that fetches live API data and shows forecast, humidity, wind, icons, and more.</p>
+      </div>
+    </div>
+      <div class="projects-container">
+      <div class="project-card">
+        <video autoplay muted loop playsinline id="video">
+          <source src="./VIDEO/unity.mp4" type="video/mp4">
+        </video>
+        <h3>3D Unity Game</h3>
+        <p>A 3D game made in Unity with interactive gameplay, realistic physics, and immersive visuals.</p>
+      </div>
+    </div>
+    <div class="projects-container">
+      <div class="project-card">
+        <video autoplay muted loop playsinline id="video">
+          <source src="./VIDEO/css.mp4" type="video/mp4">
+        </video>
+        <h3>Css Design</h3>
+        <p>A visually appealing, responsive web page created using HTML and CSS with modern layout, typography, and interactive elements.</p>
+      </div>
+    </div>
   </section>
+<section id="skills">
+  <h2 class="title">Skills</h2>
 
+  <div class="skills-container">
+    <div class="skill-box">HTML</div>
+    <div class="skill-box">CSS</div>
+    <div class="skill-box">JavaScript</div>
+    <div class="skill-box">Python</div>
+    <div class="skill-box">UI/UX Design</div>
+    <div class="skill-box">React (Basic)</div>
+  </div>
+</section>
+
+  <!-- 🔵 Contact -->
   <section id="contact">
     <h2 class="title">Contact</h2>
-    <form>
-      <input type="text" placeholder="Your Name" required />
-      <input type="email" placeholder="Your Email" required />
-      <textarea rows="4" placeholder="Message..." required></textarea>
+    <form id="contactForm">
+      <input type="text" placeholder="Your Name" />
+      <input type="email" placeholder="Your Email" />
+      <textarea rows="4" placeholder="Message..."></textarea>
       <button type="submit">Send</button>
+      <div id="form-message"></div>
     </form>
   </section>
 
   <footer>
-    © 2025 My  Portfolio
+    © 2025 My Portfolio
   </footer>
+
+  <script src="script.js"></script>
 </body>
 </html>
