@@ -242,3 +242,55 @@ button {
   background: #ffb400;
   color: #000;
 }
+#navbar ul {
+  display: flex;
+  justify-content: center;
+  gap: 30px;
+  list-style: none;
+}
+
+#navbar ul li a {
+  text-decoration: none;
+  color: #333;
+  font-weight: 600;
+  font-size: 18px;
+}
+
+/* HAMBURGER MENU (hidden by default) */
+.menu-toggle {
+  display: none; /* show only on mobile */
+  font-size: 32px;
+  cursor: pointer;
+  color: #333;
+  padding: 10px;
+}
+
+/* ---------------- MOBILE ---------------- */
+@media (max-width: 768px) {
+
+  /* Show hamburger button */
+  .menu-toggle {
+    display: block;
+  }
+
+  /* Hide menu initially */
+  #navbar ul {
+    display: none;
+    flex-direction: column;
+    text-align: center;
+    background: #f0f0f0;
+    padding: 15px 0;
+    border-radius: 10px;
+  }
+
+  /* Show menu when toggled */
+  #navbar ul.show {
+    display: flex;
+  }
+
+  #navbar ul li a {
+    padding: 10px 0;
+    font-size: 20px;
+    color: #000;
+  }
+}

@@ -1,4 +1,4 @@
-// 🔵 MOBILE MENU TOGGLE
+
 const menuBtn = document.getElementById("menu-btn");
 const nav = document.getElementById("nav-links");
 
@@ -6,7 +6,7 @@ menuBtn.addEventListener("click", () => {
   nav.classList.toggle("open");
   menuBtn.textContent = nav.classList.contains("open") ? "✖" : "☰";
 });
-// 🔵 MOBILE MENU TOGGLE
+
 const menuBtn = document.getElementById("menu-btn");
 const navLinks = document.getElementById("nav-links");
 
@@ -17,7 +17,6 @@ menuBtn.addEventListener("click", () => {
   menuBtn.textContent = navLinks.classList.contains("open") ? "✖" : "☰";
 });
 
-// 🔵 SCROLL PROGRESS BAR
 const progressBar = document.getElementById("scroll-progress");
 
 window.addEventListener("scroll", () => {
@@ -27,7 +26,7 @@ window.addEventListener("scroll", () => {
   progressBar.style.width = scrolled + "%";
 });
 
-// 🔵 CONTACT FORM VALIDATION
+
 const form = document.getElementById("contactForm");
 const messageBox = document.getElementById("form-message");
 
@@ -57,3 +56,10 @@ form.addEventListener("submit", (e) => {
   messageBox.textContent = "Thank you! Your message has been sent.";
   form.reset();
 });
+const toggleBtn = document.getElementById("menuToggle");
+const navMenu = document.querySelector("#navbar ul");
+
+toggleBtn.addEventListener("click", () => {
+  navMenu.classList.toggle("show");
+});
+
